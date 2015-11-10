@@ -26,10 +26,12 @@ jQuery.noConflict();
                         'fields': ['$id']
                      };
         return kintone.api('/k/v1/records', 'GET', params).then(function(resp) {
-            if (resp.records[0] !== null) {
-                    recNo = parseInt(resp.records[0]['$id'].value, 10) + 1;
-            }else{
-                    event.error = '見積番号が取得できません。';
+            if (resp.records.length > 0) {
+                recNo = parseInt(resp.records[0]['$id'].value, 10) + 1;
+            }else if(resp && resp.records.length == 0){
+                recNo = 1;
+            }else {
+                event.error = '見積番号が取得できません。';
             }
             //TODO : 見積もりフォーマット書き換え
             var autoEstNo = m.format('YYYYMMDD') + "-E" + ('000' + recNo).slice(-3);
