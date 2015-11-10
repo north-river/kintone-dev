@@ -1,0 +1,39 @@
+<div>  
+    <div class="block">
+        <label class="kintoneplugin-label">
+            <span id ="container_label">採番用フィールド</span>
+            <span class="kintoneplugin-require">*</span>
+        </label>
+        <div class="kintoneplugin-row">採番用フィールドのフィールドコードを入れてください</div>
+        <div class="kintoneplugin-input-outer"> 
+            <input id ="num-field" class="kintoneplugin-input-text"></input>
+        </div>
+    </div>
+    <div class="block">
+        <label class="kintoneplugin-label">
+            <span id ="container_label">採番フォーマット</span>
+            <span class="kintoneplugin-require">*</span>
+        </label>
+        <div class="kintoneplugin-row">採番用フォーマットを指定してください。<br><B>日付-文字列-レコード番号</B>となります。</div>
+        <div style="display:inline-flex">
+            <div class="kintoneplugin-select-outer">
+                <div class="kintoneplugin-select">
+                    <select id="date-format">
+                      <option>YYYYMMDD</option>
+                      <option>YYYY-MM-DD</option>
+                      <option>YYYY/MM/DD</option>
+                      <option>指定しない</option>
+                    </select>
+                </div>
+            </div>
+            <input id="string-format" class="kintoneplugin-input-text" placeholder="任意の文字列">
+            <div class="kintoneplugin-row">
+                <span style="font-size: 20px;">&nbsp; + レコード番号</span>
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <button type="button" id="submit" class="kintoneplugin-button-dialog-ok">     保存する     </button>
+        <button type="button" id="cancel" class="kintoneplugin-button-dialog-cancel">     キャンセル   </button>
+    </div>
+</div>

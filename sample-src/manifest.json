@@ -1,0 +1,39 @@
+{
+    "manifest_version": 1,
+    "version": 1,
+    "type": "APP",
+    "name": {
+        "ja": "自動採番プラグイン",
+        "en": "Automatic numbering",
+        "zh": "Automatic numbering"
+    },
+    "description": {
+        "ja": "レコードを追加する際に、指定したフォーマットで採番します",
+        "en": "Automatic numbering",
+        "zh": "Automatic numbering"
+    },
+    "icon": "image/plugin-icon.png",
+    "homepage_url": {
+        "ja": "https://cybozudev.zendesk.com/hc/ja/articles/202640930",
+        "en": "https://cybozudev.zendesk.com/hc/ja/articles/202640930"
+    },
+    "desktop": {
+        "js": [
+            "https://js.cybozu.com/jquery/2.1.4/jquery.min.js",
+            "https://js.cybozu.com/momentjs/2.8.4/moment-with-locales.min.js",
+            "js/auto-number-desktop.js"
+        ]
+    },
+    "config": {
+        "html": "html/config.html",
+        "js": [
+            "https://js.cybozu.com/jquery/2.1.4/jquery.min.js",
+            "js/auto-number-config.js"
+        ],
+        "css": [
+            "css/config-design.css",
+            "css/51-us-default.css"
+        ],
+        "required_params": ["numCode"]
+    }
+}
