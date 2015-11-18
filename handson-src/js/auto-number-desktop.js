@@ -2,8 +2,11 @@ jQuery.noConflict();
 
 (function(PLUGIN_ID,$) {
     "use strict";
-    //TODO : 設定値を取得する
-    
+    //設定値を取得する
+    var config = kintone.plugin.app.getConfig(PLUGIN_ID);
+    var numCode = config['numCode'];
+    var stFormat = config['stFormat'];
+    var dateFormat = config['dateFormat'];
     var eventsShow = ['app.record.create.show', 'app.record.edit.show', 'app.record.index.edit.show'];
     kintone.events.on(eventsShow, function(event) {
         var record = event.record;

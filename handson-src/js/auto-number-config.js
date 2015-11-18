@@ -2,11 +2,10 @@ jQuery.noConflict();
 
 (function(PLUGIN_ID,$) {
     "use strict";
-    //TODO : プラグイン設定値の取得
-     
+    //プラグインIDの設定
+    var conf = kintone.plugin.app.getConfig(PLUGIN_ID);
     //TODO : 既に値が設定されている場合はフィールドに値を設定する
     if(){
-    
     }
  
     //「保存する」ボタン押下時に入力情報を設定する
