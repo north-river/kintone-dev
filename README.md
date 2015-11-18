@@ -1,7 +1,7 @@
 kintone プラグイン ハンズオン
 ============================
 +   kintone devCamp 2015 ハンズオン中級編(プラグイン開発) 用のリポジトリです。  
-+   ハンズオン資料は[こちら](http://bit.ly/k-plugin)
++   ハンズオン資料は[こちら](https://www.dropbox.com/s/k2dc11qh4ybuveu/plugin-handson-text2015.pptx?dl=1)
 
 説明
 ------
